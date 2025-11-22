@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Student {
+    private String name;
+    private double marks;
+
+    public Student(String name, double marks) {
+        this.name = name;     // 'this' used to refer to instance variables
+        this.marks = marks;
+    }
+
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Marks: " + marks);
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student("Amit", 85);
+        s.displayInfo();
+    }
+}
